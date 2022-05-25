@@ -33,9 +33,17 @@ export default function Modal1() {
     alignItems: 'center',
     justifyContent: 'center',
   }
+  const styleButton = {
+    border: '2px solid #000',
+    backgroundColor: '#FCB07E',
+    color: '#26C485',
+    "&:hover": {
+      backgroundColor: '#000'
+    },
+  }
   return (
     <div>
-      <Button onClick={handleOpen}>Dry Lands Smokey Margarita</Button>
+      <Button sx={styleButton} onClick={handleOpen}>Dry Lands Smokey Margarita</Button>
       <Modal sx={styleModal}
         open={open}
         onClose={handleClose}
@@ -46,9 +54,6 @@ export default function Modal1() {
           <Typography id="modal-modal-title" variant="h6" component="h2">
             <Marg />
           </Typography>
-          {/* <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography> */}
         </Box>
       </Modal>
     </div>

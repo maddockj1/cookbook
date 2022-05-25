@@ -7,6 +7,11 @@ const Marg = () => {
     <br />
     1/2 to 1 tbsp Simple Syrup
     <br />
+    2 oz Cactus
+    <br />
+    Salt, Lime, Ice
+    <br />
+
   </div>)
 }
 export default Marg
